@@ -1,0 +1,33 @@
+@use "../utils/variables"as *;
+
+
+// $main-text-color:#2196F3;
+
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    color:$main-text-icon-color;
+    max-width: 1600px;
+    letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1200px;
+    margin:0 auto;
+    padding: 0 15px 0 15px;    
+}
+
+a{
+    text-decoration: inherit;
+    color:inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    list-style-type: none;
+}
