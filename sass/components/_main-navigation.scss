@@ -8,7 +8,7 @@
     justify-content: space-between;
     height: 80px;
     letter-spacing: 0.02em;
-    border-bottom: 1px solid $header-border;
+    border-bottom: 1px solid getColor('header-border');
 
     &__menu { 
         display: flex;
@@ -19,8 +19,8 @@
             justify-content: flex-end;
             font-weight: 500;
             font-size: 14px;
-            color: $second-text-icon-color;
-            fill: $second-text-icon-color;
+            color: getColor('secondary');
+            fill: getColor('secondary');
             gap: 50px;
             }
     
@@ -36,13 +36,13 @@
         
 
         &--logo{
-            font-family: 'Raleway', sans-serif;
+            font-family: $seconrady-font;
             font-size: 26px;
             letter-spacing: 0.03em;
         }
 
         &--highlight{
-            color:$brand-color-blue;
+            color: getColor('accent');
         }
 
         &--home{
@@ -53,13 +53,13 @@
     &__active-link{
         position: relative;
         display:flex;
-        color: $brand-color-blue;
+        color: getColor('accent');
 
         &::after{
             content: '';
             width: 100%;
             height: 4px;
-            background: $brand-color-blue;
+            background: getColor('accent');
             position: absolute;
             top: 44px;
             border-radius: 2px;

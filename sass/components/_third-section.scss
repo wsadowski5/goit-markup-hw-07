@@ -1,0 +1,33 @@
+@use "../utils/variables"as *;
+
+.third-section{
+    padding-bottom: 94px;
+    &__header{
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list-item{
+        position: relative;
+    }
+    
+    &__text{
+        position: absolute;
+        bottom: 0;
+        width:100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: getColor('white');
+        background-color: getColor('third-section-overlay');
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

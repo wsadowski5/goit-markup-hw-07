@@ -1,19 +1,7 @@
 @use "../utils/variables"as *;
 
 
-
-body {
-    font-family: 'Roboto', sans-serif; 
-    color:$main-text-icon-color;
-    max-width: 1600px;
-    letter-spacing: 0.03em;
-}
-
-.container {
-    width: 1200px;
-    margin:0 auto;
-    padding: 0 15px 0 15px;    
-}
+//resets
 
 a{
     text-decoration: inherit;
@@ -30,9 +18,24 @@ h1, h2, h3, h4, h5, h6, p, ul {
     list-style-type: none;
 }
 
+//styles
+
+body {
+    font-family: $main-font;
+    color: getColor('primary');
+    max-width: 1600px;
+    letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1200px;
+    margin:0 auto;
+    padding: 0 15px 0 15px;    
+}
+
 a:hover, a:focus {
-    color: $brand-color-blue;
-    fill: $brand-color-blue;
+    color: getColor('accent');
+    fill: getColor('accent');
     transition-property: color, fill; 
     transition-duration: $default-duration;
     transition-timing-function: $default-timing-function;
