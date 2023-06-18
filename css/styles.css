@@ -6,12 +6,12 @@ body {
 }
 
 :root {
-    --brand-color-blue: #2196F3;
-    --brand-color-grey: #757575;
-    --white-tekst:#fff;
-    --background-dark:#2F303A;
+    --brand-color-blue: #2196F3;  $brand-color-blue: #2196F3; */
+    /* --brand-color-grey: #757575; $second-text-icon-color : #757575 */
+    /* --white-tekst:#fff;  $white: #fff; */
+    /*--background-dark:#2F303A;
     --background-light:#F5F4FA;
-    --header-border:#ECECEC;
+    --header-border:#ECECEC;*/
     --img-shadow-first: #0000001F; /* 0.12 opacity */
     --img-shadow-second: #00000024; /* 0.14 opacity */
     --img-shadow-third: #00000033; /* 0.2 opacity */
@@ -183,9 +183,9 @@ button{
     font-size: 18px;
 }
 
-header{
+/* header{
     border-bottom: 1px solid var(--header-border);
-}
+} */
 
 .navigation {
     font-weight: 500;

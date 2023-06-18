@@ -1,8 +1,6 @@
 @use "../utils/variables"as *;
 
 
-// $main-text-color:#2196F3;
-
 
 body {
     font-family: 'Roboto', sans-serif; 
@@ -30,4 +28,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	font: inherit;
 	vertical-align: baseline;
     list-style-type: none;
+}
+
+a:hover, a:focus {
+    color: $brand-color-blue;
+    fill: $brand-color-blue;
+    transition-property: color, fill; 
+    transition-duration: $default-duration;
+    transition-timing-function: $default-timing-function;
 }
