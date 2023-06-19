@@ -2,7 +2,7 @@
 @use "../components/main-page-button";
 
 .first-section{
-    background-image:linear-gradient($overlay,$overlay),url('../images/background-main.jpg');
+    background-image:linear-gradient(getColor('first-section-overlay'),getColor('first-section-overlay')),url('../images/background-main.jpg');
     width: 100%;
     height: 600px;
     &__item{

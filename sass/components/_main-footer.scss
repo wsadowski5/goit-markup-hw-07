@@ -1,0 +1,22 @@
+@use "../utils/variables"as *;
+
+.main-footer{
+    background-color: getColor('background-dark');
+    color: getColor('white');
+    &__container{
+        display: flex;
+    }
+    &__list{
+        padding: 60px 0px; 
+        font-style: normal;
+    }
+    &__logo{
+        font-family: 'Raleway', sans-serif;
+        font-size: 26px;
+        letter-spacing: 0.03em;
+        &--accent{
+            color: getColor('accent');
+        }
+    }
+    
+}

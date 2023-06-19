@@ -40,3 +40,10 @@ a:hover, a:focus {
     transition-duration: $default-duration;
     transition-timing-function: $default-timing-function;
 }
+
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+}

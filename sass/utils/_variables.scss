@@ -8,19 +8,33 @@ $colors: (
     'background-dark':#2F303A,
     'background-light':#F5F4FA,
     'header-border':#ECECEC,
-    'third-section-overlay': rgba(47, 48, 58, 0.8)
+    'icon': #AFB1B8,
+
+    //overlays
+    'first-section-overlay':#2F303A66,
+    'third-section-overlay': rgba(47, 48, 58, 0.8),
 );
 
 @function getColor($key) {
     @return map-get($colors, $key);
   }
 
+//shadows
+
+$shadows: (
+    'first': #0000001F,
+    'second': #00000024,
+    'third': #00000033,
+);
+
+@function getShadow($key) {
+  @return map-get($shadows, $key);
+}
+
+
+//overlays
 
 $overlay:#2F303A66;
-
-
-
-//shadows
 
 
 //fonts
@@ -31,5 +45,5 @@ $seconrady-font: 'Raleway', sans-serif;
 
 // transitions
 
-$default-duration: 250ms;
+$default-duration: 250ms; 
 $default-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

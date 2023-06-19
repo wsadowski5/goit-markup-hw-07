@@ -268,7 +268,7 @@ button{
     margin-bottom: 30px
 }
 
-.social-icons {
+/* .social-icons {
     display: flex;
     gap:10px;
     justify-content: center;
@@ -283,18 +283,18 @@ button{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-}
+} */
 
-.icon-round:hover, .icon-round:focus{
+/* .icon-round:hover, .icon-round:focus{
     cursor: pointer;
     background-color: var(--brand-color-blue);
     fill: var(--white-tekst);
     transition-property: fill, background-color;
     transition-duration: var(--default-time);
     transition-timing-function: var(--default-timing-function);
-}
+} */
 
-.clients-icons{
+/* .clients-icons{
     display: flex;
     justify-content: space-between ; 
     fill: var(--icon-color);
@@ -312,7 +312,7 @@ div[class="clients-icons"]>svg:hover, div[class="clients-icons"]>svg:focus{
     cursor: pointer;
     transition-property: fill, border;
     transition-duration: var(--default-time);
-    transition-timing-function: var(--default-timing-function);
+    transition-timing-function: var(--default-timing-function); */
 }
 
 /* .img-display{
