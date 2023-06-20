@@ -12,9 +12,9 @@ body {
     /*--background-dark:#2F303A;
     --background-light:#F5F4FA;
     --header-border:#ECECEC;*/
-    --img-shadow-first: #0000001F; /* 0.12 opacity */
-    --img-shadow-second: #00000024; /* 0.14 opacity */
-    --img-shadow-third: #00000033; /* 0.2 opacity */
+    /*--img-shadow-first: #0000001F; /* 0.12 opacity */
+    /*--img-shadow-second: #00000024; /* 0.14 opacity */
+    /*--img-shadow-third: #00000033;  0.2 opacity */
     --button-shadow-hover-first: #0000001a; /* 0.1 opacity */
     --button-shadow-hover-second: #00000014;
     --grid-shadow-second: #0000000f;
@@ -22,7 +22,7 @@ body {
     --grid-border: #eee;
     --overlay:#2F303A66;
     --icon-color: #AFB1B8;
-    --icon-color-footer: #ffffff1a;
+    /*--icon-color-footer: #ffffff1a;*/
     --overlay-what-we-do: rgba(47, 48, 58, 0.8);
     --default-time: 250ms;
     --default-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -151,10 +151,10 @@ button{
     padding: 25px 100px;
 } */
 
-.contact-footer{
+/* .contact-footer{
     padding: 60px 0px; 
     font-style: normal;
-}
+} */
 
 .contact-footer :not(:first-child){
     font-size: 14px;
@@ -422,9 +422,9 @@ ul[class="img-grid"]>li:hover{
     display: flex;
 }
 
-.footer-newsletter{
+/* .footer-newsletter{
     margin: 72px 0 0 78px
-}
+} */
 
 .newsletter-input{
     width: 358px;
@@ -447,7 +447,7 @@ ul[class="img-grid"]>li:hover{
     gap:12px
 }
 
-.footer-inscription{
+/* .footer-inscription{
     text-transform: uppercase;
     line-height: 1.1428em;
     font-size: 14px;
@@ -471,15 +471,15 @@ ul[class="img-grid"]>li:hover{
     border-radius: 50px;
     fill: var(--white-tekst);
     padding: 12px;
-}
+} */
 
-.footer-round:hover, .footer-round:focus{
+/* .footer-round:hover, .footer-round:focus{
     background-color: var(--brand-color-blue);
     cursor: pointer;
     transition-property: background-color;
     transition-duration: var(--default-time);
     transition-timing-function: var(--default-timing-function);  
-}
+} */
 
 .backdrop {
     position: fixed;
@@ -660,7 +660,8 @@ position: relative;
   }
 
   .form-input:focus+svg{
-    fill: var(--brand-color-blue);    transition-property: fill;
+    fill: var(--brand-color-blue);    
+    transition-property: fill;
     transition-duration: var(--default-time);
     transition-timing-function: var(--default-timing-function);  
   }

@@ -1,0 +1,102 @@
+@use "../utils/variables"as *;
+@use "../components/main-page-button";
+
+
+
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:getShadow('third');
+    display: flex;    
+    transition-property: opacity, scale, visibility;
+    transition-duration: 1s;
+}
+
+.is-hidden{
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    scale: 0;
+}
+
+.modal{
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: getColor('white');
+    box-shadow: 0px 1px 3px hetShadow('first'), 0px 1px 1px getShadow('second'), 0px 2px 1px getShadow('third');
+    border-radius: 4px;
+    &__close{
+        all:unset;
+        position: absolute;
+        margin:8px 0 0 490px;
+        &:hover{
+            background:none;
+            box-shadow: none;
+            cursor: pointer;
+        }
+    }
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    &__title{
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 0.03em;
+        line-height:23px;
+        margin-bottom: 2px;
+        font-style: 700;
+        font-weight: 700;
+    }
+    &__item{
+        position: relative;
+    }
+    &__label{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: getColor('secondary');
+        margin: 10px 0 4px 0;
+        display: flex;
+    }
+    &__input{
+        width: 448px;
+        height: 40px;
+        background-color:inherit;
+        border: 1px solid getColor('form-input-border');
+        border-radius: 4px;
+        padding: 0 0 0 42px;
+        display: block;
+        &:focus{
+            outline: 1px solid getColor('accent');
+            transition-property: outline;
+            transition-duration: $default-duration;
+            transition-timing-function: $default-timing-function;
+        }
+
+
+        &:focus+svg{
+            fill: getColor('accent');    
+            transition-property: fill;
+            transition-duration: $default-duration;
+            transition-timing-function: $default-timing-function;
+        }
+    }
+    &__icon{
+        position:absolute;
+        top: 32px;
+        left: 15px;
+        fill: getColor('icons-form');
+    }
+    
+}

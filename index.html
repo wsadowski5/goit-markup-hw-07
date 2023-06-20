@@ -232,28 +232,28 @@
     <div class="container">
       <div class="main-footer__container">
         <address>
-          <ul class="main-footer__list">
-            <li class="main-footer__logo"><span class="main-footer__logo--accent">Web</span>Studio</li>
-            <li> <a href="https://goo.gl/maps/61aa3FAZrJpg5g7s7">m. Warszawa, Aleje Jerozolimskie 21</a></li>
-            <li class="transparent-text"><a href="mailto:info@example.com">info@example.com</a></li>
-            <li class="transparent-text"><a href="tel:+48111111111">+48 111 111 111</a></li>
+          <ul class="footer-contact">
+            <li class="footer-contact__logo"><span class="footer-contact__logo--accent">Web</span>Studio</li>
+            <li class="footer-contact__link"> <a href="https://goo.gl/maps/61aa3FAZrJpg5g7s7">m. Warszawa, Aleje Jerozolimskie 21</a></li>
+            <li class="footer-contact__link footer-contact__link--opacity"><a href="mailto:info@example.com">info@example.com</a></li>
+            <li class="footer-contact__link footer-contact__link--opacity"><a href="tel:+48111111111">+48 111 111 111</a></li>
           </ul>
         </address>
-      <div class="footer-social">
-        <p class="footer-inscription">DOŁĄCZ DO NAS</p>
-          <div class="footer-icons">
-            <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-instagram"></use></svg></a>
-            <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg></a>
-             <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-facebook"></use></svg></a>
-            <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin"></use></svg></a>
+      <div class="footer-socials">
+        <p class="footer-socials__text">DOŁĄCZ DO NAS</p>
+          <div class="footer-socials__icons-block">
+            <a class="footer-socials__icon"><svg width="20" height="20"><use href="./images/icons.svg#icon-instagram"></use></svg></a>
+            <a class="footer-socials__icon"><svg width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg></a>
+             <a class="footer-socials__icon"><svg width="20" height="20"><use href="./images/icons.svg#icon-facebook"></use></svg></a>
+            <a class="footer-socials__icon"><svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin"></use></svg></a>
           </div>
         </div>
-      <div class="footer-newsletter">
+      <div class="newsletter">
       <form>
-        <label for="newsletter" class="footer-inscription"><p>Zapisz się do newslettera</p></label>
-        <div class="input-send">
-        <input id="newsletter" type="email" placeholder="E-mail" class="newsletter-input form-input">
-        <button type="submit" class="button-main-page ">Zapisz się <svg width="24px" height="24" class="icon-newsletter"><use href="./images/icons.svg#icon-send"></use></svg></button></div>
+        <label for="newsletter" class="newsletter__label"><p>Zapisz się do newslettera</p></label>
+        <div class="newsletter__input-block">
+        <input id="newsletter" type="email" placeholder="E-mail" class="newsletter__input form-input">
+        <button type="submit" class="main-page-button">Zapisz się <svg width="24px" height="24" class="newsletter__button-icon"><use href="./images/icons.svg#icon-send"></use></svg></button></div>
       </form>
     </div>
     </div>
@@ -261,49 +261,49 @@
   </footer>
 
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop" data-modal>
   <div class="modal">
-    <button class="close" data-modal-close>
+    <button class="modal__close" data-modal-close>
       <svg width="30" height="30"><use href="./images/icons.svg#icon-close"></use></svg>
     </button>
 
-    <form name="order_the_service" autocomplete="on" class="form-style">
-      <h3 >Zostaw swoje dane w formularzu poniżej</h3>
+    <form name="order_the_service" autocomplete="on" class="form">
+      <h3 class="form__title" >Zostaw swoje dane w formularzu poniżej</h3>
       <div class="input-icons">
 
-     <div class="form-box"> 
-      <label for="name" class="form-label"> 
+     <div class="form__item"> 
+      <label for="name" class="form__label"> 
         Imie</label> 
         <input 
-          class="form-input" 
+          class="form__input" 
           id="name" 
           type="text" 
           name="name" 
           required 
         />
-        <svg width="12px" height="12px" class="icons-form" ><use href="./images/icons.svg#icon-name"></use></svg> 
+        <svg width="12px" height="12px" class="form__icon" ><use href="./images/icons.svg#icon-name"></use></svg> 
     </div>
 
-    <div class="form-box"> 
-      <label for="phone" class="form-label">
+    <div class="form__item"> 
+      <label for="phone" class="form__label">
         Telefon</label>
         <input 
-          class="form-input" 
+          class="form__input" 
           id="phone" 
           type="tel" 
           name="phone_number"
           />
-        <svg width="13px" height="13px" class="icons-form"><use href="./images/icons.svg#icon-phone"></use></svg>
+        <svg width="13px" height="13px" class="form__icon"><use href="./images/icons.svg#icon-phone"></use></svg>
      </div> 
       
-     <div class="form-box" > 
-      <label for="e-mail" class="form-label">Email</label>
-        <input id="e-mail" type="email" name="email" class="form-input" >
-        <svg width="15px" height="12px" class="icons-form"><use href="./images/icons.svg#icon-e-mail"></use></svg>
+     <div class="form__item" > 
+      <label for="e-mail" class="form__label">Email</label>
+        <input id="e-mail" type="email" name="email" class="form__input" >
+        <svg width="15px" height="12px" class="form__icon"><use href="./images/icons.svg#icon-e-mail"></use></svg>
       </div> 
 
-      <label for="comment" class="form-label"><p>Komentarz</p></label>
-        <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="textarea form-input"></textarea>
+      <label for="comment" class="form__label"><p>Komentarz</p></label>
+        <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="textarea form__input"></textarea>
       </div>
 
 
