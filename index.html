@@ -303,29 +303,29 @@
       </div> 
 
       <label for="comment" class="form__label"><p>Komentarz</p></label>
-        <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="textarea form__input"></textarea>
+        <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="form__textarea"></textarea>
       </div>
 
 
-      <label class="checkbox-label" for="checkbox-accept">  
-        <input class="checkbox-hidden" type="checkbox" width="16px"height="15px"
+      <label class="checkbox" for="checkbox-accept">  
+        <input class="checkbox__hidden-input" type="checkbox" width="16px"height="15px"
         name="reg_accept" required>
-        <svg class="checkbox-icon-unchecked" width="16px" height="15px"> 
+        <svg class="checkbox__icon-unchecked" width="16px" height="15px"> 
           <use href="./images/icons.svg#icon-checkbox"></use>
         </svg>
-        <svg class="checkbox-icon" width="16px" height="15px"> 
+        <svg class="checkbox__icon" width="16px" height="15px"> 
           <use href="./images/icons.svg#icon-tick"></use>
         </svg>
 
        
         
        
-        <div class="checkbox-text">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a></div>
+        <div class="checkbox__text">Oświadczam iż akceptuję <a class="checkbox__link" href="">Regulamin</a> i <a class="checkbox__link">Politykę Prywatności</a></div>
 
       </label>
 
 
-      <button type="submit" class="button-main-page">Wyślij</button>
+      <button type="submit" class="main-page-button">Wyślij</button>
     </form>
   </div>
 </div>

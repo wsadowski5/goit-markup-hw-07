@@ -13,6 +13,7 @@ $colors: (
     'newsletter-border': rgba(255, 255, 255, 0.3),
     'icons-form': #212121,
     'form-input-border': rgba(33, 33, 33, 0.2),
+    'grid-border': #eee,
 
 
 
@@ -33,6 +34,10 @@ $shadows: (
     'first': #0000001F,
     'second': #00000024,
     'third': #00000033,
+    'button-first':#0000001a, 
+    'button-second':#00000014,
+    'grid-first': #0000000f,
+    'grid-second': #00000029,
 );
 
 @function getShadow($key) {

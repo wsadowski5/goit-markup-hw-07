@@ -2,7 +2,13 @@
 @use "../components/main-page-button";
 
 
-
+%input{
+        width: 448px;
+        background-color:inherit;
+        border: 1px solid getColor('form-input-border');
+        border-radius: 4px;
+        display: block;
+}
 
 .backdrop{
     position: fixed;
@@ -70,13 +76,10 @@
         display: flex;
     }
     &__input{
-        width: 448px;
-        height: 40px;
-        background-color:inherit;
-        border: 1px solid getColor('form-input-border');
-        border-radius: 4px;
+        @extend %input;
+        height:40px;
         padding: 0 0 0 42px;
-        display: block;
+    
         &:focus{
             outline: 1px solid getColor('accent');
             transition-property: outline;
@@ -92,6 +95,20 @@
             transition-timing-function: $default-timing-function;
         }
     }
+
+    &__textarea{
+        @extend %input;
+        height: 120px;
+        padding: 12px 16px;
+        resize: none;
+        &:focus{
+            outline: 1px solid getColor('accent');
+            transition-property: outline;
+            transition-duration: $default-duration;
+            transition-timing-function: $default-timing-function;
+        }
+    }
+
     &__icon{
         position:absolute;
         top: 32px;
@@ -99,4 +116,55 @@
         fill: getColor('icons-form');
     }
     
+}
+
+.checkbox{
+    margin: 20px 0 30px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: getColor('secondary');
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__hidden-input{
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 15px;
+            z-index: 10;
+            &:checked ~ .checkbox__icon{
+                visibility: visible;
+                background-color: getColor('accent');
+                scale:1;
+            }
+            &.checkbox-hidden:checked ~ .checkbox-icon-unchecked{
+                scale: 0;
+            }
+    }
+    &__icon-unchecked{
+        position: absolute;
+        scale: 1;
+        transition:scale, 0.2s
+    }
+
+    &__icon{
+        position: absolute;
+    fill: getColor('white');
+    border-radius: 2px ;
+    visibility: hidden;
+    transition-property: background-color,visibility,scale;
+    transition-duration: $default-duration;
+    transition-timing-function: $default-timing-function;
+    scale:0;
+    }
+    &__text{
+        margin-left: 8px;
+    }
+    &__link{
+        text-decoration: underline;
+        color: getColor('accent');
+    }
 }
