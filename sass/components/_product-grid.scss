@@ -31,13 +31,13 @@
         }
     }
 
-.grid{
+.product-grid{
     display:flex;
     flex-wrap: wrap;
     gap:30px;
 }
 
-.card{
+.product-card{
 
     &:hover{
         cursor: pointer;
@@ -46,7 +46,7 @@
         transition-duration: $default-duration;
         transition-timing-function: $default-timing-function;
     }
-    &:hover .card__overlay-text{
+    &:hover .product-card__overlay-text{
         transform: translateY(0);
     }&__img-box{
         position: relative;

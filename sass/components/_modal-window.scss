@@ -10,6 +10,13 @@
         display: block;
 }
 
+.is-hidden{
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    scale: 0;
+}
+
 .backdrop{
     position: fixed;
     top: 0;
@@ -22,12 +29,7 @@
     transition-duration: 1s;
 }
 
-.is-hidden{
-    pointer-events: none;
-    visibility: hidden;
-    opacity: 0;
-    scale: 0;
-}
+
 
 .modal{
     position: absolute;
@@ -67,7 +69,6 @@
         position: relative;
     }
     &__label{
-        font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.01em;
@@ -120,7 +121,6 @@
 
 .checkbox{
     margin: 20px 0 30px 15px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;

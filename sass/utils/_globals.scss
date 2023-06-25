@@ -47,3 +47,7 @@ h2{
     text-align: center;
     padding-bottom: 50px;
 }
+
+header{
+    border-bottom: 1px solid getColor('header-border');
+}

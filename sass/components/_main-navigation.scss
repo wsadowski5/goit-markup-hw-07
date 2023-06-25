@@ -1,14 +1,15 @@
 @use "../utils/variables"as *;
 
 
+
 .main-navigation {
     font-weight: 500;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 79px;
     letter-spacing: 0.02em;
-    border-bottom: 1px solid getColor('header-border');
+    
 
     &__menu { 
         display: flex;

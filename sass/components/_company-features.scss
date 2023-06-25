@@ -1,6 +1,6 @@
 @use "../utils/variables"as *;
 
-.second-section{
+.company-features{
     padding: 94px 0;
 
     &__list{
@@ -23,7 +23,6 @@
         font-size: 14px;
         color: getColor('secondary');
         width: 270px;
-        font-weight: 400;
         letter-spacing: 0.03em;
     }
 
